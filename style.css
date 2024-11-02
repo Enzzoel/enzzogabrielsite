@@ -1,0 +1,52 @@
+/*INDEX.HTML*/
+body {
+    background-color: black;
+    color: white;
+}
+
+.div-inicio{
+    background-color: black;
+}
+.responsive-image {
+    width: 25%;
+    height: 5%;
+}
+
+#nav-inicial{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+#naju_grid div div{
+    margin-top: 2%;
+    background-color: black;
+}
+
+#modals_naju{
+    background-color: black;
+    color: white;
+}
+#imgnaju{
+    border-radius: 20px;
+}
+
+/*SERIES.HTML*/
+.div-series{
+    background-color: black;
+}
+
+#grid_series{
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/*FILMES.HTML*/
+.div-filmes{
+    background-color: black;
+}
+
+#grid_filmes{
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+}

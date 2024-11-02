@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.6/dist/js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Netflix Najú</title>
+</head>
+<body>
+    <div class="div-inicio">
+        
+        <div class="uk-position-relative">
+            <div uk-parallax="bgy: -200">
+                <video src="src/assets/video/dacingshadowsz.mp4" width="1920" height="1080" loop muted playsinline uk-video="autoplay: inview"></video>
+                
+            </div>
+            <div class="uk-position-top">
+                <nav class="uk-navbar-container uk-navbar-transparent">
+                    <div class="uk-container" uk-sticky>
+                        <div uk-navbar>
+                            <img src="src/assets/img/najuflix.png" height="512" width="195" class="responsive-image"/>
+                        
+                            <div class="uk-navbar-right">
+                                <a href="#offcanvas-najuflix" uk-toggle uk-icon="menu" style="color: white;"></a>
+                                <!--OFFCANVAS NAJUFLIX-->
+                                <div id="offcanvas-najuflix" uk-offcanvas>
+                                    <div class="uk-offcanvas-bar">
+                                        <div class="uk-width-1-2@s uk-width-2-3@m">
+                                            <ul class="uk-nav uk-nav-default">
+                                                <li><a href="index.html">Início</a></li>
+                                                <li><a href="series.html">Séries</a></li>
+                                                <li><a href="filmes.html">Filmes</a></li>
+                                                <li><a href="#">Créditos</a></li>
+                                                <li><a href="#">Jogos</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        
+        <h1 class="uk-heading-divider" style="color: white; padding-left: 15px;">Séries Novas</h1>
+        <!--Grid I-->
+        <div class="uk-child-width-expand@s uk-text-center" id="naju_grid" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-candlelight" uk-toggle><img id="imgnaju" src="src/assets/img/naju_candlelightX.png"></a></div>
+            </div> 
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-specialday" uk-toggle><img id="imgnaju" src="src/assets/img/naju_special_dayX.png"></a></div>
+            </div>
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-sunflowers" uk-toggle><img id="imgnaju" src="src/assets/img/naju_sunflowers_to_uX.png"></a></div>
+            </div>
+        </div>
+        <!--MODALS 1-->
+        <div id="modal-candlelight" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Candlelight</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>Enzzo e Naju, um jovem casal apaixonado, compartilham um momento mágico em "Candlelight". Após um concerto emocionante, eles retornam para casa, onde Enzzo surpreende Naju com um pedido de namoro à luz de velas, selando seu amor em um ambiente romântico e íntimo.</p>
+                    <blockquote cite="#">
+                        <p class="uk-margin-small-bottom">"Candlelight" é uma série encantadora que destaca a autenticidade do amor jovem entre Enzzo e Naju. O concerto à luz de velas culmina em um pedido de namoro sincero e emocional, capturado com uma direção de fotografia deslumbrante. A química entre os protagonistas é palpável, transmitindo profundidade sem clichês. Embora a série pudesse explorar mais o desenvolvimento individual dos personagens, sua celebração dos pequenos momentos e gestos genuínos torna a história verdadeiramente cativante. "Candlelight" é uma joia que recomendo fortemente, especialmente à luz de velas para sentir toda a sua magia.</p>
+                        <footer>Júlia Fernandes para a revista <cite><a href="#">TIMES</a></cite></footer>
+                    </blockquote>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+        <!--MODALS 2-->
+        <div id="modal-specialday" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Special Day</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>Em "Special Day", Enzzo é o parceiro ideal para Ana Júlia em seu aniversário. Apesar dos contratempos que ameaçam estragar a celebração, Enzzo não mede esforços para tornar o dia dela memorável. Ele presenteia Ana Júlia com sua câmera fotográfica, capturando cada momento especial e demonstrando seu compromisso em fazer dela uma ocasião inesquecível, repleta de amor e apoio.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+        <!--MODALS 3-->
+        <div id="modal-sunflowers" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Sunflowers to U</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>Em "Sunflowers to U", Enzzo, profundamente apaixonado por Naju, expressa seu amor de uma maneira única. Enquanto ela está longe, ele envia girassóis, símbolos de amor e lealdade, como um gesto de carinho e lembrança do quanto ela é especial para ele. Uma série sobre gestos simples que carregam o peso do amor verdadeiro.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="uk-heading-divider" style="color: white; padding-left: 15px;">Favoritos da Família</h1>
+        <!--Grid II-->
+        <div class="uk-child-width-expand@s uk-text-center" id="naju_grid" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-yugioh" uk-toggle><img id="imgnaju" src="src/assets/img/naju_yugioh_lovsX.png"></a></div>
+            </div> 
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-umcorpo" uk-toggle><img id="imgnaju" src="src/assets/img/naju_umcorpo.png"></a></div>
+            </div>
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-semprejuntos" uk-toggle><img id="imgnaju" src="src/assets/img/naju_semprejuntos.png"></a></div>
+            </div>
+        </div>
+         <!--MODALS 4-->
+         <div id="modal-yugioh" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Yu-Gi-Oh! Love</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>Prepare-se para duelos épicos em "Yu-Gi-Oh! Love". Naju Seto e Enzzo Yugi enfrentam-se no lendário Baralho das Cartas de Amor. Em um mundo onde cada carta é uma expressão de sentimentos profundos, eles competem para determinar quem é o verdadeiro mestre duelista do amor. Uma emocionante saga que mistura estratégia de duelos com o poder do coração.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+        <!--MODALS 5-->
+        <div id="modal-umcorpo" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Um corpo, Duas personalidades</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>Naju vive com uma dualidade fascinante em "Um corpo, duas personalidades". Às vezes, ela se veste como uma princesa, exalando elegância e graciosidade. Em outros momentos, adota o estilo de um "mano das quebradas", refletindo sua versatilidade e autenticidade. Uma jornada visualmente cativante que explora a riqueza de sua personalidade através do vestuário.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+        <!--MODALS 6-->
+        <div id="modal-semprejuntos" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Sempre Juntos: The Date</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>Esta declaração de amor transcende as palavras em "Sempre juntos". É mais do que uma série; é uma homenagem à beleza única de alguém especial. Enzzo expressa seu amor profundo, prometendo cuidar e admirar para sempre. Uma narrativa que captura a complexidade e a beleza de um amor verdadeiro, transmitida através de uma plataforma de streaming dedicada a celebrar a singularidade e a grandeza de sua amada.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="uk-heading-divider" style="color: white; padding-left: 15px;">Originais Najúflix</h1>
+        <!--Grid III-->
+        <div class="uk-child-width-expand@s uk-text-center" id="naju_grid" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-eterna" uk-toggle><img id="imgnaju" src="src/assets/img/naju_eternaX.png"></a></div>
+            </div> 
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-hsm" uk-toggle><img id="imgnaju" src="src/assets/img/naju_highschool musical.png"></a></div>
+            </div>
+            <div id="card_naju">
+                <div class="uk-card uk-card-default uk-card-body"><a href="#modal-swim" uk-toggle><img id="imgnaju" src="src/assets/img/naju_swimX.png"></a></div>
+            </div>
+        </div>
+        <!--MODALS 7-->
+        <div id="modal-eterna" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Eterna Dança: A série animada</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>"Eterna Dança" segue os bailarinos Shaw Marquez e Thay Ribeiro enquanto enfrentam problemas no casamento. Apesar das dificuldades, eles encontram força e renovação na dança, usando-a como uma linguagem de reconexão e amor. Um filme emocionante que celebra a resiliência do amor e a beleza da dança como meio de cura e união.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+        <!--MODALS 8-->
+        <div id="modal-hsm" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">High School Musical: College</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>"High School Musical College" apresenta novos personagens vibrantes, como Gabriel Hughes, um jogador profissional de basquete, e Ana Júlia Rodriguez, uma dedicada residente de serviço social. Este casal apaixonado enfrenta os desafios da vida universitária e a distância, mantendo viva a tradição musical dos filmes anteriores. O filme combina romance, música e a luta para manter o amor em meio aos dilemas da faculdade.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+        <!--MODALS 9-->
+        <div id="modal-swim" style="background-color: black; color: white;" uk-modal>
+            <div id="modals_naju" class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header" style="background-color: black; color: white;">
+                    <h2 class="uk-modal-title" style="color: white;">Swimming in your body lines</h2>
+                </div>
+                <div class="uk-modal-body" style="background-color: black; color: white;">
+                    <p>Em "Swimming in Your Body Lines", Naju e Enzzo mergulham em uma jornada animada de autodescoberta e amadurecimento espiritual. A série aborda dilemas sérios, revelando como o crescimento pessoal e a conexão profunda entre eles ajudam a enfrentar os desafios da vida. Uma exploração poética e visualmente deslumbrante da alma e do coração.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right" style="background-color: black; color: white;">
+                    <button class="uk-button uk-button-danger uk-modal-close" type="button">Voltar</button>
+                    <button class="uk-button uk-button" type="button" style="color: black;">Assistir</button>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+
+        <dl class="uk-description-list uk-flex uk-flex-center">
+            <dt>Direitos Reservados para Enzzo Gabriel | Site Criado por Enzzo Gabriel para Ana Júlia.<br/><br/><br/></dt>
+        </dl><br/>
+    </div>
+    <div class="div-series">
+
+    </div>
+</body>
+</html>
