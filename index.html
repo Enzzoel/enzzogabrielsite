@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/css/uikit.min.css" />
+    <!--CSS Normal-->
+    <link rel="stylesheet" href="style.css">
+    <title>Enzzo Gabriel</title>
+</head>
+<body>
+    <div>
+        <!--DIV PRINCIPAL COM NAVBAR-->
+        <nav id="div1" class="uk-navbar-container">
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <a id="logo1" class="uk-navbar-item uk-logo" href="#">Enzzo Gabriel</a>
+                            <li>   
+                                <a id="navbar-li-a" href="#">Início</a>
+                            </li>
+                            <li>   
+                                <a id="navbar-li-a" href="#modal-contato" uk-toggle>Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--MODAL DO CONTATO-->
+    <div id="modal-contato" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title" style="font-family: 'Halogen', sans-serif; color: white;">Contato</h2>
+            <p>Tem alguma dúvida, sugestão ou proposta? Estou sempre aberto a novas ideias, parcerias e boas conversas.
+
+                Você pode me encontrar e entrar em contato pelas redes sociais!
+                <br/><br/>Instagram: @enzzo.gml</p>
+            <p class="uk-text-right" style="font-family: 'Halogen', sans-serif; color: white;"></p>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Voltar</button>
+            </p>
+        </div>
+    </div>
+    <div>
+        <!--SLIDESHOW COM IMAGENS-->
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: push">
+            <div class="uk-slideshow-items">
+                <div>
+                    <img src="imgs/artworks1.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="imgs/artworks2.jpg" alt="" uk-cover>
+                </div>
+            </div>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        </div>
+        <br/>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div id="bio1" class="uk-card-media-left uk-cover-container">
+                <img src="imgs/enzzo1.jpeg" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div id="bio2">
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Quem é Enzzo Gabriel?</h3>
+                    <p>Enzzo tem <span id="idade-enzzo"></span> anos, é professor de Matemática 
+                        e um apaixonado por palavras desde muito cedo. 
+                        Aos 11 anos, começou a criar suas próprias histórias, 
+                        movido por uma imaginação inquieta (e maluca), eternamente movido
+                        por um desejo genuíno de 
+                        expressar sentimentos que muitas vezes não cabiam apenas em 
+                        palavras faladas.<br/><br/>
+                        Aos 14, decidiu que queria transformar esse amor em algo maior: 
+                        o sonho de escrever livros nasceu ali naquele momento.<br/><br/>
+                        Além dos números que ensina com dedicação, Enzzo se encontra 
+                        no universo dos jogos, da tecnologia, das músicas calmas e 
+                        dos romances que aquecem o coração. Ler é, para ele, uma 
+                        forma de entender o mundo; escrever, uma maneira de se 
+                        entender dentro dele.<br/><br/>
+                        Lembranças das flores que cativei é mais do que seu primeiro 
+                        livro: é um pedaço de sua essência, uma colheita delicada 
+                        das emoções que ele cultivou ao longo da vida.</p>
+                </div>
+            </div> 
+        </div>
+        <div>
+            <div class="uk-text-center" style="margin-top: 20px;"></div>
+                <div style="width: 150px; height: 150px; margin: 0 auto; border-radius: 50%; overflow: hidden; border: 5px solid #789dbc;">
+                    <a href="https://www.youtube.com/@marqszoel" target="_blank">
+                        <img src="imgs/enzzo1.jpeg" alt="Enzzo Gabriel" style="width: 100%; height: 100%; object-fit: cover;">
+                    </a>
+                </div>
+                <p style="font-family: 'Halogen', sans-serif; margin-top: 10px; font-size: 18px; color: #ffffff; text-align: center;">Enzzo Gabriel [YOUTUBE]</p>
+            </div>
+        </div>
+        <div>
+            <!--Canal do youtube-->
+            <div>
+                <div class="uk-card uk-card-default uk-card-body uk-text-center" uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="font-family: 'Halogen', sans-serif; background-color: #789dbc; color: white;">
+                    <img src="imgs/lembrançasdasflores-capa.png" alt="Example Image" style="width: 50%; height: auto; border-color: white; border: 20px; display: block; margin: 0 auto;">
+                    <p>Adquira agora Lembranças das flores que cativei!</p>
+                </div>
+            </div>
+            <!--SISTEMA DE COMPRA-->
+            <div id="linkbtn1-before" class="uk-text-center" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                    <a id="linkbtn1" class="uk-button uk-button-default" href="https://www.amazon.com.br/Lembranças-das-flores-que-cativei/dp/6501401488/ref=sr_1_1?crid=3APN1A96MEHHV&dib=eyJ2IjoiMSJ9.QP8e1P0eVpAHiR4Afiik-F88SvOQ1LnaruG3_Y_azZ6Wah6ABpQ1N3NqzK7HVxiBaBG3ZF3ccPQfcW98nJf504o2m5NDhff-B725hXnX3X0TZFl8IS1Psewa5EAOAu4kVRZ270oumgM3AQZnSSUACJhy8djVtBjFkUBFURVRrr9D2wm-quMRdQ9UFXGc0oFgxIwG-hN6uX9a2IArKhouaJ-l6DKaLShszYFHadQ16Mlyhxdn1b9d5RYJXzQ79RJgKAl2hOzx5VjrE3UEqSQUKmsAppTu1N6tsqJfHracYoU.tA_JaVz2HKeGEKWuP9H3dJ2-hK-Ay444B0iQJYS5MDU&dib_tag=se&keywords=lembranças+das+flores&qid=1744894441&sprefix=lembranças+das+%2Caps%2C209&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">AMAZON</a>
+                    <a id="linkbtn1" class="uk-button uk-button-default" href="https://loja.uiclap.com/titulo/ua84380/">UICLAP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER FINAL-->
+    <footer class="uk-text-center uk-padding-small" style="background-color: #f8f8f8; color: #333;">
+        <p>&copy; 2025 Enzzo Gabriel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+    <!--JAVASCRIPT Normal-->
+    <script src="script.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.6/dist/js/uikit-icons.min.js"></script>
+</html>

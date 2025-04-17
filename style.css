@@ -1,0 +1,94 @@
+body {
+    background-color: #789dbc;
+}
+
+#div1{
+    background-color: #789dbc;
+}
+
+@font-face {
+    font-family: 'Halogen';
+    src: url('fonts/Halogen.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#logo1 {
+    font-family: 'Halogen', sans-serif;
+    color: white;
+}
+
+#navbar-li-a {
+    font-family: 'Halogen', sans-serif;
+    padding-left: 10px;
+    color: white;
+}
+#navbar-li-a:hover {
+    color: #000000;
+}
+
+#modal-contato div{
+    background-color: #789dbc; /* Blue background */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Halogen', sans-serif;
+}
+
+#linkbtn1-before {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#linkbtn1 {
+    display: inline-block;
+    background-color: #789dbc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Halogen', sans-serif;
+    text-align: center;
+}
+
+#linkbtn1:hover {
+    color: black
+}
+
+#bio1{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #789dbc;
+    border: 20px solid #789dbc; 
+    padding: 10px;
+    font-family: 'Halogen', sans-serif;
+    color: white;
+}
+#bio1 img{
+    border-radius: 40px
+}
+#bio1 div h3{
+    font-family: 'Halogen', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+#bio2{
+    background-color: #789dbc;
+    font-family: 'Halogen', sans-serif;
+    color: white;
+}
+#bio2 div h3{
+    font-family: 'Halogen', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+footer p {
+    background-color: #789dbc;
+    font-family: 'Halogen', sans-serif;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
